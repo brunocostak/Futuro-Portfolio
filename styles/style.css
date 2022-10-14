@@ -2,6 +2,36 @@
   padding: 0;
   margin: 0;
 }
+
+/* Configurações de posicionamento do header */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.menu a:hover {
+  color: white;
+}
+.header {
+    margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+/* Configurações de posicionamento da main */
+.container {
+  display: flex;
+  padding-top: 25px;
+  align-content: flex-start;
+  align-items: center;
+}
 body {
   width: 1000px;
   margin: auto;
@@ -18,7 +48,7 @@ body {
   background-repeat: no-repeat;
 }
 .meu-nome {
-  font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .selfie-img {
   border: 5px solid forestgreen;
@@ -27,28 +57,6 @@ body {
   font-style: italic;
   color: forestgreen;
 }
-.menu a {
-  text-decoration: none;
-  color: black;
-}
-.menu a:hover {
-  color: white;
-}
-.container {
-  margin: auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-.quem-sou {
-  display: flex;
-  padding-top: 25px;
-  align-content: flex-start;
-  align-items: center;
-}
 .discription {
   font-family: "Inter", sans-serif;
   display: flex;
@@ -56,29 +64,30 @@ body {
   flex-direction: column;
   padding-left: 70px;
 }
-.b2 {
-  width: 50%;
-  display: flex;
+h2 {
+    color: forestgreen;
+    padding-bottom: 5px;
 }
 .habilidades {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 ul {
-  list-style: none;
+    list-style: none;
 }
-nav {
-  display: flex;
-  gap: 15px;
+li {
+  font-size: 18px;
 }
 p {
   font-size: 24px;
 }
 strong {
-  color: forestgreen;
+    color: forestgreen;
 }
+
+/* Configurações do rodapé */
 .rodape {
   display: flex;
   justify-content: center;
@@ -92,11 +101,4 @@ strong {
 }
 .rodape a:hover {
   color: white;
-}
-h2 {
-  color: forestgreen;
-  padding-bottom: 5px;
-}
-li {
-  font-size: 18px;
 }
