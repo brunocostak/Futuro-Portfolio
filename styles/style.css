@@ -6,13 +6,35 @@ body{
     width: 1000px;
     margin: auto;
     background-color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(146,244,192,1) 0%, rgba(2,44,22,1) 100%);
+
 }
 div{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.b1{
+.meu-nome{
+    font-family: 'Inter', sans-serif;
+}
+.selfie-img{
+    border: 5px solid forestgreen;
+}
+.destaque-span{
+    font-style: italic;
+    color: forestgreen;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover{
+    color: white;
+}
+.container{
     margin: auto;
     width: 100%;
     display: flex;
@@ -23,9 +45,10 @@ div{
 }
 .quem-sou{
     display: flex;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 .discription{
+    font-family: 'Inter', sans-serif;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -54,11 +77,19 @@ p{
 strong{
     color: forestgreen;
 }
-footer{
+.rodape{
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+.rodape a{
     padding-top: 20px;
+
+    text-decoration: none;
+    color: black;
+}
+.rodape a:hover{
+    color: white;
 }
 h2{
     color: forestgreen;
