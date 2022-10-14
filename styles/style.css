@@ -5,11 +5,13 @@
 body{
     width: 1000px;
     margin: auto;
-    background-color: aliceblue;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
+    min-width: 100vh;
+
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(146,244,192,1) 0%, rgba(2,44,22,1) 100%);
+    background-repeat: no-repeat;
 
 }
 div{
