@@ -17,15 +17,22 @@
 }
 .header {
     margin: auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+
+    padding-top: 10px;
 }
 
 /* Configurações de posicionamento da main */
+.name{
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 10px;
+}
 .container {
   display: flex;
   padding-top: 25px;
@@ -76,6 +83,10 @@ h2 {
 }
 ul {
     list-style: none;
+}
+ul > li:nth-child(odd){
+  color: white;
+  font-weight: bold;
 }
 li {
   font-size: 18px;
