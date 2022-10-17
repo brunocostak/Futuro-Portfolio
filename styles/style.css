@@ -34,17 +34,18 @@
   padding-top: 10px;
 }
 .container {
+  margin: auto;
+  width: 80%;
   display: flex;
   padding-top: 25px;
   align-content: flex-start;
   align-items: center;
 }
 body {
-  width: 1000px;
+  width: 80%;
   margin: auto;
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
-  min-width: 100vh;
 
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -59,6 +60,8 @@ body {
 }
 .selfie-img {
   border: 5px solid forestgreen;
+  width: 35%;
+  height: 50%;
 }
 .destaque-span {
   font-style: italic;
@@ -112,4 +115,58 @@ strong {
 }
 .rodape a:hover {
   color: white;
+}
+@media (min-width: 300px) {
+  body{
+    width: 90%;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .discription{
+    padding: 0;
+    font-size: 18px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .habilidades h2{
+    font-size: 18px;
+  }
+  .selfie-img{
+    width: 100%;
+    height: 100%;
+  }
+  .name h1{
+    text-align: center;
+    font-size: 18px;
+  }
+  .menu a{
+    font-size: 12px;
+  }
+  .rodape a{
+    padding-bottom: 20px;
+    color: white;
+  }
+}
+@media (min-width:700px) {
+  .selfie-img{
+    width: 30%;
+    height: 50%;
+  }
+  .container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .name h1{
+    font-size: 24px;
+  }
 }
